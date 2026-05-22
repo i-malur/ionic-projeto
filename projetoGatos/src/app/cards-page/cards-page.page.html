@@ -1,0 +1,52 @@
+<ion-header [translucent]="false">
+  <ion-toolbar color="primary">
+    <ion-title>Gatos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="container">
+
+    <!--Inicio do código para colocar gatos cadastrados-->
+    <ion-card *ngFor="let gato of gatos">
+
+      <img [src]="gato.foto" />
+
+      <ion-card-header>
+        <ion-card-title>
+          {{ gato.nome }}
+        </ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+
+        {{ gato.descricao }}
+
+        <ion-button expand="block" color="primary" (click)="excluirGato(gato.id)">
+
+          Excluir
+
+        </ion-button>
+
+        <ion-button expand="block" color="warning" (click)="editarGato(gato.id)" style="flex: 1;">
+          Editar
+        </ion-button>
+
+      </ion-card-content>
+    </ion-card>
+
+      <ion-button routerLink="/cadastro-gatos" color="secondary" class="button-card">
+        Cadastrar novo gato
+      </ion-button>
+
+      <ion-button routerLink="/home" color="secondary" class="button-card">
+        Página Anterior
+      </ion-button>
+
+      <ion-button routerLink="/curiosidade" color="secondary" class="button-card">
+        Curiosidades sobre gatos
+      </ion-button>
+
+  
+  </div>
+</ion-content>

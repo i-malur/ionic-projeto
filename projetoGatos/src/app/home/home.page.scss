@@ -1,0 +1,33 @@
+.container {
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: flex-end; /* vai pro fundo */
+  align-items: flex-start;   /* vai pra esquerda */
+
+  min-height: 100%;
+
+  padding: 20px; /* distância da borda */
+
+}
+
+ion-button {
+
+  width: 350px;
+  height: 70px;
+
+  font-size: 18px;
+
+  --border-radius: 20px;
+
+}
+
+.bg-custom {
+
+  --background:
+    url('https://images.unsplash.com/photo-1478098711619-5ab0b478d6e6?fm=jpg&q=60&w=3000&auto=format&fit=crop')
+    center center / cover
+    no-repeat;
+
+}

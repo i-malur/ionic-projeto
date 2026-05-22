@@ -1,0 +1,30 @@
+:root {
+  /* =========================
+  ALTERANDO COR PADRÃO
+  ========================= */
+  --ion-color-primary: #1abc9c;
+  --ion-color-primary-rgb: 26, 188, 156;
+  --ion-color-primary-contrast: #ffffff;
+  /* =========================
+  CRIANDO NOVA COR
+  ========================= */
+  --ion-color-minha-cor: #9b59b6;
+  --ion-color-minha-cor-rgb: 155, 89, 182;
+  --ion-color-minha-cor-contrast: #ffffff; // For information on how to create your own theme, please refer to:
+  // https://ionicframework.com/docs/theming/
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Fundo escuro */
+    --ion-background-color: #41079f;
+    /* Texto claro */
+    --ion-text-color: #726e6e;
+    /* Cor principal muda no dark */
+    --ion-color-primary: #b993e9;
+    --ion-color-secondary: #da85dd;
+    --ion-color-success: rgb(233, 192, 227);
+    --ion-color-light: #4d8eb0;
+    --ion-color-medium: #946bbd;
+
+  }
+}
