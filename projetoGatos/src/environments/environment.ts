@@ -1,17 +1,17 @@
 // This file can be replaced during build by using the `fileReplacements` array.
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
-
+declare const process: any;
 export const environment = {
   production: false,
   firebaseConfig: {
-    apiKey: "AIzaSyAb1BORz6ys243r5yjwrOzYwc1hvpAKmNY",
-    authDomain: "appgatos-ce415.firebaseapp.com",
-    projectId: "appgatos-ce415",
-    storageBucket: "appgatos-ce415.firebasestorage.app",
-    messagingSenderId: "955356913076",
-    appId: "1:955356913076:web:9c9f1ebd526909e6db66e1",
-    measurementId: "G-J56ZESHN2V"
+    apiKey: process.env['NGX_APP_FIREBASE_API_KEY'],
+    authDomain: process.env['NGX_APP_FIREBASE_AUTH_DOMAIN'],
+    projectId: process.env['NGX_APP_FIREBASE_PROJECT_ID'],
+    storageBucket: process.env['NGX_APP_FIREBASE_STORAGE_BUCKET'],
+    messagingSenderId: process.env['NGX_APP_FIREBASE_MESSAGING_SENDER_ID'],
+    appId: process.env['NGX_APP_FIREBASE_APP_ID'],
+    measurementId: process.env['NGX_APP_FIREBASE_MEASUREMENT_ID']
   }
 };
 

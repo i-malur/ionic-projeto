@@ -8,11 +8,9 @@ import { Router } from '@angular/router';
   standalone: false,
 })
 export class HomePage {
-
-  // O Router precisa estar aqui no construtor
+  
   constructor(private router: Router) {}
 
-  // ESSA FUNÇÃO PRECISA EXISTIR AQUI DENTRO!
   irParaCards() {
     this.router.navigate(['/cards-page']);
   }
